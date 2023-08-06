@@ -1,0 +1,17 @@
+ext.versions = [
+        'core'            : '1.10.1',
+        'appcompat'       : '1.6.1',
+        'material'        : '1.9.0',
+        'constraintlayout': '2.1.4',
+        'activity'        : '1.7.2',
+        'fragment'        : '1.6.0',
+        'lifecycle'       : '2.6.1',
+        'daggerhilt'      : '2.46.1',
+        'retrofit'        : '2.9.0',
+        'okhttp'          : '5.0.0-alpha.11',
+        'cicerone'        : '7.1',
+        'security'        : '1.0.0',
+        'bindingdelegates': '1.5.9',
+        'gson'            : '2.10.1',
+        'swiperefresh'    : '1.2.0-alpha01'
+]

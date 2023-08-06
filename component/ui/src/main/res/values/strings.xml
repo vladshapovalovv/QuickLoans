@@ -1,0 +1,41 @@
+<resources>
+    <!--IO Exception Errors -->
+    <string name="connection_failed_message">Connection failed. Please check your internet connection and try again</string>
+    <string name="timeout_message">Connection timed out. Please check your internet connection and try again</string>
+    <string name="server_not_found_message">Server not found. Please check your network connection and try again later</string>
+    <string name="ssl_handshake_failed_message">SSL handshake failed. Please ensure you have a secure and stable internet connection</string>
+    <string name="unknown_error_message">An error occurred during the network request. Please try again later</string>
+
+    <!--Server Error Codes -->
+    <string name="invalid_credentials_error_message">Invalid credentials. Please check your username and password</string>
+    <string name="access_denied_error_message">Access denied. You do not have permission to perform this action</string>
+    <string name="user_not_exist_error_message">Login failed. The requested user account does not exist</string>
+    <string name="user_already_exist_error_message">Login failed. User with this name already exists</string>
+
+    <!--Input Error Codes -->
+    <string name="name_field_empty">Name field cannot be empty</string>
+    <string name="password_field_empty">Password field cannot be empty</string>
+    <string name="field_empty">This field cannot be empty</string>
+
+    <string name="greeting_text">Welcome back!</string>
+    <string name="error_headline">An error occurred</string>
+    <string name="reconnect_button">Try again</string>
+
+    <string name="ruble_symbol">"\u0020₽"</string>
+    <string name="week_counter">Weeks: </string>
+    <string name="return_amount">Return amount:</string>
+    <string name="loan_date">Loan of:\u0020</string>
+    <string name="space">\u0020</string>
+    <string name="days">Days:\u0020</string>
+    <string name="period_days">\u0020days</string>
+    <string name="language">Language</string>
+    <string name="empty_loans">No loans yet</string>
+
+    <string name="loan_instructions_title">How to Get a Loan?</string>
+    <string name="loan_instructions_body">1. In history page click \"New loan\" in bottom right corner\n
+    2. Select needed loan amount\n
+    3. If you\'re satisfied with conditions click \"next\"\n
+    4. Fill personal information, click \"next\"\n
+    5. On next page find loan status and instruction how to get it\n</string>
+    <string name="loan_instructions_ok">OK</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="example_user">Vlad Shapovalov</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="russian_language">🇷🇺 Russian</string>
+    <string name="english_language">🇬🇧 English</string>
+    <string name="switch_to_russian">Switch to Russian</string>
+    <string name="switch_to_english">Switch to English</string>
+    <string name="profile">Profile</string>
+    <string name="read_get_loan_instruction">Read Get Loan Instruction</string>
+
+
+    <string-array name="languages">
+        <item>@string/english_language</item>
+        <item>@string/russian_language</item>
+    </string-array>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="jbr-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/component" />
+            <option value="$PROJECT_DIR$/component/errorhandler" />
+            <option value="$PROJECT_DIR$/component/ui" />
+            <option value="$PROJECT_DIR$/component/version" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/authentication" />
+            <option value="$PROJECT_DIR$/feature/loan" />
+            <option value="$PROJECT_DIR$/feature/loan/create" />
+            <option value="$PROJECT_DIR$/feature/loan/details" />
+            <option value="$PROJECT_DIR$/feature/loan/history" />
+            <option value="$PROJECT_DIR$/feature/profile" />
+            <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/shared/loan" />
+            <option value="$PROJECT_DIR$/util" />
+            <option value="$PROJECT_DIR$/util/calculation" />
+            <option value="$PROJECT_DIR$/util/event" />
+            <option value="$PROJECT_DIR$/util/formatter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

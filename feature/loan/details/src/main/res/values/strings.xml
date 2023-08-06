@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="loan_receive_instruction">Receiving a Loan by Visiting the Bank\n
+    1. Choose loans page in app\n
+    2. Loans → My loans\n
+    3. Ensure loan is approved\n
+    4. Select your nearest bank\n
+    5. Gather all documents as requested\n
+    6. Go to tha bank and receive your loan \n
+\n
+Receiving a Loan by Withdrawing on Bank Card\n
+    1. Choose loans page in app\n
+    2. Loans → My loans → withdraw\n
+    3. Select card \n
+    4. Fill your card info \n
+    5. Confirm card details.\n
+    6. Withdraw the loan amount.\n
+    7. Check your bank account for the credited amount.</string>
+    <string name="status">Status:</string>
+    <string name="date">Date:</string>
+    <string name="borrower">Borrower:</string>
+    <string name="interest_rate">Interest Rate:</string>
+    <string name="period">Period:</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="how_to_receive">How to receive?</string>
+    <string name="loan_details">Loan details</string>
+</resources>

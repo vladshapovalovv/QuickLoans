@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_name">Имя</string>
+    <string name="hint_password">Пароль</string>
+    <string name="sign_in_button">Вход</string>
+    <string name="login_footer_first">Нет аккаунта?</string>
+    <string name="login_footer_second">Зарегестрироваться</string>
+    <string name="create_account_headline">Создание аккаунта</string>
+    <string name="registration_footer_first">Уже есть аккаунт?</string>
+    <string name="registration_footer_second">Войти</string>
+    <string name="sign_up_successfully_message">Регистрация прошла успешно!</string>
+    <string name="action_ok">OK</string>
+    <string name="sing_up_button">Зарегестрироваться</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toolbar_name">История</string>
+    <string name="amount_plus_prefix">"+ "</string>
+    <string name="new_loan_fab">Новый займ</string>
+</resources>

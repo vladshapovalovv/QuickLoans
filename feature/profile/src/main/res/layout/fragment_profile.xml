@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIconTint="@color/navigationIconTint"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/profile"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/profilePictureImageView"
+        android:layout_width="@dimen/profile_image_size"
+        android:layout_height="@dimen/profile_image_size"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:src="@drawable/user_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large"
+        android:textStyle=""
+        app:layout_constraintStart_toEndOf="@+id/profilePictureImageView"
+        app:layout_constraintTop_toTopOf="@id/profilePictureImageView"
+        android:text="@string/example_user" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextAppearance.Material3.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/edit_profile"
+        app:layout_constraintStart_toEndOf="@+id/profilePictureImageView"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_arrow_forward"
+        app:navigationIconTint="@color/navigationIconTint"
+        app:layout_constraintBottom_toBottomOf="@id/profilePictureImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profilePictureImageView" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/extra_large_margin"
+        app:layout_constraintTop_toBottomOf="@id/profilePictureImageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:drawableStart="@drawable/ic_language"
+        android:drawablePadding="@dimen/padding_small"
+        android:drawableTint="@color/drawable_tint"
+        android:id="@+id/LanguageTextView"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/switch_to_russian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/languageSwitch"
+        app:layout_constraintTop_toTopOf="@id/languageSwitch" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/languageSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/divider" />
+
+
+    <Button
+        android:id="@+id/instructionButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/read_get_loan_instruction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LanguageTextView" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

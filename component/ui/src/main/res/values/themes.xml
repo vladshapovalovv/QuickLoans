@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.InputLayoutTheme" parent="Theme.Material3.DayNight">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox
+        </item>
+    </style>
+</resources>

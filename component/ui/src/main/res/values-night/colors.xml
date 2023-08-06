@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_highlight">#FFB3AE</color>
+    <color name="icon_tint">#C48682</color>
+    <color name="navigationIconTint">#ff5251</color>
+    <color name="drawable_tint">#FFFFFF</color>
+</resources>

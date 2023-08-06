@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="approved">Подтвержден</string>
+    <string name="registered">Зарегистрирован</string>
+    <string name="rejected">Отклонен</string>
+</resources>

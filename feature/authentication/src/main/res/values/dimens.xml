@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="extra_large_text_size">28sp</dimen>
+    <dimen name="extra_large_margin">32dp</dimen>
+    <dimen name="vector_medium">200dp</dimen>
+    <dimen name="vector_large">300dp</dimen>
+</resources>

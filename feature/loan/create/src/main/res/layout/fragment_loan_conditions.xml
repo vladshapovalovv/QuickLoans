@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIconTint="@color/navigationIconTint"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/toolbar_new_loan" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/amountHeadlineTextView"
+        style="@style/TextAppearance.Material3.LabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        app:layout_constraintBottom_toTopOf="@+id/loanAmountTextView"
+        app:layout_constraintStart_toStartOf="@+id/loanAmountTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/loanAmountTextView"
+        style="@style/TextAppearance.Material3.HeadlineLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/extra_large_margin"
+        android:text="@string/five_thousand_rubles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/amountSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_large"
+        android:stepSize="1000"
+        android:valueFrom="5000"
+        android:valueTo="20000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loanAmountTextView" />
+
+    <TextView
+        android:id="@+id/minValueTextView"
+        style="@style/TextAppearance.Material3.LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/five_thousand_rubles"
+        app:layout_constraintStart_toStartOf="@+id/amountSlider"
+        app:layout_constraintTop_toBottomOf="@id/amountSlider" />
+
+    <TextView
+        android:id="@+id/maxValueTextView"
+        style="@style/TextAppearance.Material3.LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="20000 ₽"
+        app:layout_constraintEnd_toEndOf="@+id/amountSlider"
+        app:layout_constraintTop_toBottomOf="@id/amountSlider" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_constraintTop_toBottomOf="@id/maxValueTextView" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/percentHeadlineTextview"
+        style="@style/TextAppearance.Material3.LabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/interest_rate"
+        app:layout_constraintEnd_toEndOf="@+id/percentTextview"
+        app:layout_constraintStart_toStartOf="@+id/percentTextview"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/percentTextview"
+        style="@style/TextAppearance.Material3.HeadlineLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="12 %"
+        app:layout_constraintEnd_toStartOf="@+id/verticalDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/percentHeadlineTextview" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/periodHeadlineTextview"
+        style="@style/TextAppearance.Material3.LabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/loan_period"
+        app:layout_constraintEnd_toEndOf="@+id/periodTextView"
+        app:layout_constraintStart_toStartOf="@+id/periodTextView"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/periodTextView"
+        style="@style/TextAppearance.Material3.HeadlineLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="75 days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/verticalDivider"
+        app:layout_constraintTop_toBottomOf="@id/periodHeadlineTextview" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/secondDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_constraintTop_toBottomOf="@id/periodTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/returnAmountHeadlineTextview"
+        style="@style/TextAppearance.Material3.LabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/extra_large_margin"
+        android:text="@string/return_amount"
+        app:layout_constraintEnd_toEndOf="@+id/returnAmountTextview"
+        app:layout_constraintStart_toStartOf="@+id/returnAmountTextview"
+        app:layout_constraintTop_toBottomOf="@id/secondDivider" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/returnAmountTextview"
+        style="@style/TextAppearance.Material3.HeadlineLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/five_thousand_rubles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/returnAmountHeadlineTextview" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/extra_large_margin"
+        android:layout_marginBottom="@dimen/extra_large_margin"
+        android:text="@string/continue_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/verticalDivider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/secondDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+    <include
+        layout="@layout/error_screen"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/errorLayout"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

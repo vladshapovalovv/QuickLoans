@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="approved">Approved</string>
+    <string name="registered">Registered</string>
+    <string name="rejected">Rejected</string>
+</resources>

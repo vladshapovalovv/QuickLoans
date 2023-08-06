@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Shapovalov"
+include ':app'
+include ':component:ui'
+include ':component:errorhandler'
+include ':component:version'
+include ':feature:authentication'
+include ':feature:loan:create'
+include ':feature:loan:history'
+include ':feature:loan:details'
+include ':feature:profile'
+include ':shared:loan'
+include ':util:event'
+include ':util:formatter'
+include ':util:calculation'

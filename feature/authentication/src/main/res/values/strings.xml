@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_name">Name</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="login_footer_first">New here?</string>
+    <string name="login_footer_second">Sign up</string>
+    <string name="create_account_headline">Create Account</string>
+    <string name="registration_footer_first">Already have an account?</string>
+    <string name="registration_footer_second">Sign in</string>
+    <string name="sign_up_successfully_message">Signed up successfully!</string>
+    <string name="action_ok">OK</string>
+    <string name="sing_up_button">Sing up</string>
+</resources>

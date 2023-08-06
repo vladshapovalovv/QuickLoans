@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="days">\u0020дней</string>
+    <string name="ruble_symbol">₽\u0020d</string>
+    <string name="five_thousand_rubles">5 000 ₽</string>
+    <string name="loan_status">Статус займа:\u0020</string>
+    <string name="amount">Сумма:\u0020</string>
+    <string name="date">Дата:\u0020</string>
+    <string name="borrower_name">Имя заемщика:\u0020</string>
+    <string name="borrower_lastname">Фамлия заемщика:\u0020</string>
+    <string name="interest_rate">Процент:\u0020</string>
+    <string name="phone_number">Номер телефона заемщика:\u0020</string>
+    <string name="back_to_history_button">К истории</string>
+    <string name="loan_confirmed_display">Займ подтвержден</string>
+    <string name="return_amount">Сумма к возврату:</string>
+    <string name="last_name">Фамлиия</string>
+    <string name="arrange_loan">Оформить займ</string>
+    <string name="name">Имя</string>
+    <string name="continue_">Прололжить</string>
+    <string name="loan_period">Срок:</string>
+    <string name="toolbar_loan_status">Статус</string>
+    <string name="toolbar_new_loan">Новый займ</string>
+    <string name="personal_info">Личные данные</string>
+    <string name="borrower">Заёмщик</string>
+    <string name="phone">Номер телефона</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--IO Exception Errors -->
+    <string name="connection_failed_message">Не удалось подключиться. Пожалуйста, проверьте подключение к Интернету и повторите попытку</string>
+    <string name="timeout_message">Соединение прервалось. Пожалуйста, проверьте подключение к Интернету и повторите попытку</string>
+    <string name="server_not_found_message">Сервер не найден. Пожалуйста, проверьте подключение к сети и повторите попытку позже</string>
+    <string name="ssl_handshake_failed_message">Не удалось выполнить квитирование SSL. Пожалуйста, убедитесь, что у вас надежное и стабильное интернет-соединение</string>
+    <string name="unknown_error_message">Во время сетевого запроса произошла ошибка. Пожалуйста, повторите попытку позже</string>
+
+    <!--Server Error Codes -->
+    <string name="invalid_credentials_error_message">Неверные учетные данные. Пожалуйста, проверьте имя пользователя и пароль</string>
+    <string name="access_denied_error_message">Доступ запрещен. У вас нет разрешения на выполнение этого действия</string>
+    <string name="user_not_exist_error_message">Вход в систему не удался. Запрашиваемая учетная запись пользователя не существует</string>
+    <string name="user_already_exist_error_message">Вход в систему не удался. Пользователь с таким именем уже существует</string>
+
+    <!--Input Error Codes -->
+    <string name="name_field_empty">Поле имени не может быть пустым</string>
+    <string name="password_field_empty">Поле пароля не может быть пустым</string>
+    <string name="field_empty">Поле не может быть пустым</string>
+
+    <string name="greeting_text">Добро пожаловать!</string>
+    <string name="error_headline">Произошла ошибка</string>
+    <string name="reconnect_button">Попытаться снова</string>
+
+    <string name="ruble_symbol">"\u0020₽"</string>
+    <string name="week_counter">Количество недель: </string>
+    <string name="return_amount">Сумма возврата:</string>
+    <string name="loan_date">Займ от:\u0020</string>
+    <string name="space">\u0020</string>
+    <string name="days">Дней: \u0020</string>
+    <string name="period_days">\u0020дней</string>
+    <string name="language">Язык</string>
+    <string name="empty_loans">История займов пуста</string>
+
+    <string name="loan_instructions_body"> 1. В разделе истории займов нажмите \"Новый займ\"в правом нижнем углу\n
+    2. Выберите необходимую сумму\n
+    3. Если условия вас устраивают нажмите \"Продолжить\"\n
+    4. Заполните необходимую информацию \"Продолжить\"\n
+    5. Посмотрите статус займа и инструкцию как его получить\n</string>
+    <string name="loan_instructions_title">Как оформить займ?</string>
+    <string name="loan_instructions_ok">Понятно</string>
+</resources>

@@ -1,0 +1,130 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shapovalov.ui.LoginFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/decorationImageView"
+        android:layout_width="@dimen/vector_large"
+        android:layout_height="@dimen/vector_medium"
+        android:layout_marginBottom="@dimen/extra_large_margin"
+        android:src="@drawable/undraw_account"
+        app:layout_constraintBottom_toTopOf="@id/greetingTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greetingTextView"
+        style="@style/TextAppearance.Material3.DisplaySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:text="@string/create_account_headline"
+        app:layout_constraintBottom_toTopOf="@+id/loginInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/extra_large_margin"
+        android:layout_marginEnd="@dimen/extra_large_margin"
+        android:hint="@string/hint_name"
+        android:theme="@style/Theme.InputLayoutTheme"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:maxLength="20" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/extra_large_margin"
+        android:layout_marginEnd="@dimen/extra_large_margin"
+        android:hint="@string/hint_password"
+        android:theme="@style/Theme.InputLayoutTheme"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:inputType="textPassword"
+            android:maxLength="32" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginBottom="@dimen/margin_large"
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sing_up_button"
+        app:layout_constraintBottom_toTopOf="@+id/openRegisterPageLinearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginBottom="@dimen/extra_large_margin"
+        android:id="@+id/openRegisterPageLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration_footer_first" />
+
+        <TextView
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/text_highlight"
+            android:layout_marginStart="4sp"
+            android:text="@string/registration_footer_second"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/errorLayout"
+        layout="@layout/error_screen"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

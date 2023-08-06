@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="days">\u0020days</string>
+    <string name="ruble_symbol">₽\u0020</string>
+    <string name="five_thousand_rubles">5 000 ₽</string>
+    <string name="loan_status">Status of loan:\u0020</string>
+    <string name="amount">Amount:\u0020</string>
+    <string name="date">Date:\u0020</string>
+    <string name="borrower_name">Borrower\'s name:\u0020</string>
+    <string name="borrower_lastname">Borrower\'s lastname:\u0020</string>
+    <string name="interest_rate">Interest rate:\u0020</string>
+    <string name="phone_number">Phone number:\u0020</string>
+    <string name="back_to_history_button">Back to history</string>
+    <string name="loan_confirmed_display">Loan confirmed</string>
+    <string name="return_amount">Return amount:</string>
+    <string name="last_name">Last Name</string>
+    <string name="arrange_loan">Arrange loan</string>
+    <string name="name">Name</string>
+    <string name="continue_">Continue</string>
+    <string name="loan_period">Period:</string>
+    <string name="toolbar_loan_status">Loan status</string>
+    <string name="toolbar_new_loan">New loan</string>
+    <string name="personal_info">Personal info</string>
+    <string name="borrower">Borrower:</string>
+    <string name="phone">Phone</string>
+</resources>

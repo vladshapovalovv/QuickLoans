@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="loan_receive_instruction">Получение займа в банке\n
+   1. Выберите страницу займов в приложении\n
+    2. Займы → Мои займы\n
+    3. Убедитесь, что займ одобрен\n
+    4. Выберите ближайший банк\n
+    5. Соберите все необходимые документы\n
+    6. Перейдите в банк и получите ваш займ\n
+
+    Получение займа на карту\n
+    1. Выберите страницу займов в приложении\n
+    2. Займы → Мои займы → Вывести\n
+    3. Выберите карту\n
+    4. Заполните данные вашей карты\n
+    5. Подтвердите данные карты\n
+    6. Выведите сумму займа\n
+    7. Проверьте ваш банковский счет на зачисленную сумму.\n
+</string>
+ <string name="status">Статус:</string>
+ <string name="date">Дата:</string>
+ <string name="borrower">Заемщик:</string>
+ <string name="interest_rate">Процент:</string>
+ <string name="period">Срок:</string>
+ <string name="phone_number">Номер телефона:</string>
+ <string name="how_to_receive">Как получить?</string>
+ <string name="loan_details">Детали займа</string>
+</resources>

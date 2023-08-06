@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="extra_large_margin">32dp</dimen>
+    <dimen name="vector_medium">200dp</dimen>
+    <dimen name="vector_large">300dp</dimen>
+</resources>

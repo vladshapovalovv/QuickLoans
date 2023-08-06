@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="example_user">Влад Шаповалов</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="russian_language">🇬🇧 Английский</string>
+    <string name="english_language">🇷🇺 Русский</string>
+    <string name="switch_to_russian">Переключиться на русский</string>
+    <string name="switch_to_english">Переключиться на английский</string>
+    <string name="profile">Профиль</string>
+    <string name="read_get_loan_instruction">Инструкция получения займа</string>
+
+    <string-array name="languages">
+        <item>@string/english_language</item>
+        <item>@string/russian_language</item>
+    </string-array>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Material3.CardView.Outlined"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_medium"
+    android:layout_marginVertical="@dimen/margin_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loan_item_height">
+
+        <ImageView
+            android:id="@+id/starImageView"
+            android:layout_width="@dimen/row_item_image_size"
+            android:layout_height="match_parent"
+            android:padding="@dimen/loan_image_padding"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/md_theme_dark_onSurfaceVariant" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/starImageView"
+            app:layout_constraintTop_toTopOf="@id/innerLayout"
+            tools:text="Loan of 21.6.2023" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            style="@style/TextAppearance.Material3.LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_very_small"
+            app:layout_constraintStart_toEndOf="@+id/statusImageView"
+            app:layout_constraintStart_toStartOf="@+id/statusImageView"
+            app:layout_constraintTop_toBottomOf="@id/dateTextView"
+            tools:text="Approved" />
+
+        <ImageView
+            android:id="@+id/statusImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:src="@drawable/status_dot"
+            app:layout_constraintBottom_toBottomOf="@id/statusTextView"
+            app:layout_constraintStart_toEndOf="@id/starImageView"
+            app:layout_constraintTop_toTopOf="@id/statusTextView"
+            app:tint="@color/indicator_approved" />
+
+        <TextView
+            android:id="@+id/amountTextView"
+            style="@style/TextAppearance.Material3.HeadlineSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="20000 ₽" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
